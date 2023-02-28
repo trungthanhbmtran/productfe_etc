@@ -2,7 +2,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Image from 'next/image';
 import { Grid } from '@mui/material';
-import ProductImg from './productImg';
+// import ProductImg from './productImg';
 import useDialogModal from '../../../hooks/useDialogModal';
 import { useState } from 'react';
 
@@ -14,7 +14,7 @@ export default function VerticalTabs({ product }) {
         setValue(newValue);
     };
 
-    const [ProductDetailDialog, showProductDetailDialog] = useDialogModal(ProductImg);
+    // const [ProductDetailDialog, showProductDetailDialog] = useDialogModal(ProductImg);
 
     // console.log('product', value)
 
@@ -22,7 +22,7 @@ export default function VerticalTabs({ product }) {
 
         <Grid container spacing={2}>
             <Grid item xs={12} sx={{textAlign : 'center'}}>
-                <Image onClick={()=>showProductDetailDialog()} src={product.PathImg[value].v} alt="showProduct" priority width={400} height={300} />
+                {/* <Image onClick={()=>showProductDetailDialog()} src={product.PathImg[value].v} alt="showProduct" priority width={400} height={300} /> */}
             </Grid>
             <Grid item xs={12}>
                 <Tabs
@@ -35,7 +35,7 @@ export default function VerticalTabs({ product }) {
                     {product.PathImg.map((e, i) => <Tab key={e.k} icon={<Image src={e.v} priority alt="Image" width={120} height={120} />} />)}
                 </Tabs>
             </Grid>
-            <ProductDetailDialog product={product.PathImg[value].v}/>
+            {/* <ProductDetailDialog product={product.PathImg[value].v}/> */}
         </Grid>
     )
 }
