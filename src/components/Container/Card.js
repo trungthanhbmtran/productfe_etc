@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions, Button } from '@mui/material';
-import Link from '@mui/material';
+import Link from '@mui/material/Link';
 import { useDispatch, useSelector } from 'react-redux';
 import * as Actions from '../../../redux/Actions'
 
@@ -32,7 +32,7 @@ const Card = ({ PathImg, productId, time, name, path, brand, cost }) => {
     }
     return (
         <CardMui sx={{ maxWidth: 345, minHeight: 380, borderRadius: '20px ' }}>
-                <CardActionArea component={Link} href={path} sx={{ minHeight: 380 }}>
+                <CardActionArea component={Link} href={path} >
                     <CardMedia
                         component="img"
                         height="460"

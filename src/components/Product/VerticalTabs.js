@@ -35,7 +35,7 @@ export default function VerticalTabs({ product }) {
                     {product.PathImg.map((e, i) => <Tab key={e.k} icon={<Image src={e.v} priority alt="Image" width={120} height={120} />} />)}
                 </Tabs>
             </Grid>
-            {/* <ProductDetailDialog product={product.PathImg[value].v}/> */}
+            <ProductDetailDialog product={product.PathImg[value].v}/>
         </Grid>
     )
 }
