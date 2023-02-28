@@ -13,7 +13,7 @@ const Product = () => {
     const { slug } = router.query
     // console.log('pid',slug)
     const Product = useSelector(state => state.product)
-    const ProductFiler = useMemo(() => Product.find(e => e.productId == slug), [slug])
+    const ProductFiler = useMemo(() => Product.find(e => e.productId == slug), [slug,Product])
 
     const ProductSame = Product.filter(e => e.Group === ProductFiler.Group)
 

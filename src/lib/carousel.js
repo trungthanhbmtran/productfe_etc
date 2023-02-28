@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 
@@ -59,8 +60,9 @@ const Carosel = () => {
             slidesToSlide={1}
             swipeable
         >
-            <img
+            <Image
                 src="banner/2be808012f5cf702ae4d.jpg"
+                alt='1'
                 style={{
                     display: 'block',
                     height: '100%',
@@ -68,8 +70,9 @@ const Carosel = () => {
                     width: '100%'
                 }}
             />
-            <img
+            <Image
                 src="banner/1c535ab67deba5b5fcfa.jpg"
+                alt='2'
                 style={{
                     display: 'block',
                     height: '100%',

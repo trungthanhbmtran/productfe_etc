@@ -40,7 +40,7 @@ export default function Doc({slug}) {
 
   const TypeTable = DocETC.filter(e => e.IdType == slug)
 
-  const TabeRender = useMemo(() => TypeTable.at().Content.filter(e => e.IdCategory == clicked),[clicked])
+  const TabeRender = useMemo(() => TypeTable.at().Content.filter(e => e.IdCategory == clicked),[clicked,TypeTable])
   return (
     <LayOut>
       <Grid container  sx={{m : 5}}>
@@ -48,6 +48,7 @@ export default function Doc({slug}) {
           {TypeTable.at().Content && TypeTable.at().Content.map(e => {
             return (
               <List
+              key={e.IdCategory}
                 variant="outlined"
                 sx={{ borderRadius: 'sm', maxWidth: 240 }}
               >

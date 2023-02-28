@@ -1,17 +1,17 @@
-import { Box, Grid, Typography, Button, useMediaQuery, Container } from "@mui/material";
+import { Box, Grid ,useMediaQuery } from "@mui/material";
 import { styled } from '@mui/material/styles'
 import Image from "next/image";
 import { useTheme } from '@mui/material/styles';
 import { Colors } from "../../../lib/theme";
 
-const BoxImageHeader = styled(Box)(({ src }) => ({
-    backgroundImage: `url(${src})`,
-    opacity: 0.9,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: '50% 50%',
-    paddingBottom: 120
-}));
+// const BoxImageHeader = styled(Box)(({ src }) => ({
+//     backgroundImage: `url(${src})`,
+//     opacity: 0.9,
+//     backgroundSize: 'cover',
+//     backgroundRepeat: 'no-repeat',
+//     backgroundPosition: '50% 50%',
+//     paddingBottom: 120
+// }));
 
 
 const BannerHeader = () => {
@@ -26,10 +26,10 @@ const BannerHeader = () => {
                 alignItems="center"
                 sx={{ backgroundColor: Colors.background }}>
                 <Grid item >
-                    <Image src="/Logo/logo-moi-3.png" alt="logo" width={420} height={100} />
+                    <Image src="/Logo/logo-moi-3.png" alt="log3"  width={420} height={100} />
                 </Grid>
                 <Grid item >
-                    <Image src="/Logo/header-image-3.png" alt="logo" width={450} height={100} />
+                    <Image src="/Logo/header-image-3.png"  alt="im" width={450} height={100} />
                 </Grid>
                 {/* <Grid
                     item
@@ -69,7 +69,7 @@ const BannerHeader = () => {
                 justifyContent="center"
                 alignItems="center"
                 sx={{ backgroundColor: Colors.background }}>
-                <Image src="/Logo/LOGO-removebg-preview.png" width={200} height={100} />
+                <Image src="/Logo/LOGO-removebg-preview.png" alt="log2" width={200} height={100} />
             </Grid>
         )
 

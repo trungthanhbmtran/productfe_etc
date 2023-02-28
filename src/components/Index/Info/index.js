@@ -8,6 +8,7 @@ const Info = () => {
         <WrapperInfo tittle="Tin tức">
             {NewsData.map(e => 
             <Card
+                 key={e.id}
                 // productId={e.id}
                 path={`/post/${e.group}/${e.id}`}
                 // path={`/post/${e.group}/${e.id}`}
