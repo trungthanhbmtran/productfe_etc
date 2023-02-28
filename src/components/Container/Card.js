@@ -32,8 +32,7 @@ const Card = ({ PathImg, productId, time, name, path, brand, cost }) => {
     }
     return (
         <CardMui sx={{ maxWidth: 345, minHeight: 380, borderRadius: '20px ' }}>
-            <Link href={path}>
-                <CardActionArea sx={{ minHeight: 380 }}>
+                <CardActionArea component={Link} href={path} sx={{ minHeight: 380 }}>
                     <CardMedia
                         component="img"
                         height="460"
@@ -62,7 +61,6 @@ const Card = ({ PathImg, productId, time, name, path, brand, cost }) => {
                         Thêm vào giỏ hàng
                     </Button>
                 </CardActions>
-            </Link>
         </CardMui>
     )
 }

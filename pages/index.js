@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <LayOut>
       <Stack>
-        <Carosel/>
+        {/* <Carosel/> */}
         <BoxProduct/>
       </Stack>
     </LayOut>
