@@ -2,7 +2,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Image from 'next/image';
 import { Grid } from '@mui/material';
-import ProductImg from './productImg';
+import ProductImg from './ProductImg';
 import useDialogModal from '../../../hooks/useDialogModal';
 import { useState } from 'react';
 
