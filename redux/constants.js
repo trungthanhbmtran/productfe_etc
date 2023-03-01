@@ -7,7 +7,7 @@ export const constantsProps = {
         {
             "productId": 1001,
             "code": "n-1001",
-            "name": "Thành đang thử",
+            "name": "Đang thử phát thứ 2",
             "Group": 1101,
             "brand": "Đại Nguyên",
             "PathImg": [

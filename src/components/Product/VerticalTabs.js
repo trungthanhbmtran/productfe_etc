@@ -2,7 +2,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Image from 'next/image';
 import { Grid } from '@mui/material';
-// import ProductImg from './productImg';
+import ProductImg from './productImg';
 import useDialogModal from '../../../hooks/useDialogModal';
 import { useState } from 'react';
 
@@ -22,7 +22,7 @@ export default function VerticalTabs({ product }) {
 
         <Grid container spacing={2}>
             <Grid item xs={12} sx={{textAlign : 'center'}}>
-                {/* <Image onClick={()=>showProductDetailDialog()} src={product.PathImg[value].v} alt="showProduct" priority width={400} height={300} /> */}
+                <Image onClick={()=>showProductDetailDialog()} src={product.PathImg[value].v} alt="showProduct" priority width={400} height={300} />
             </Grid>
             <Grid item xs={12}>
                 <Tabs
