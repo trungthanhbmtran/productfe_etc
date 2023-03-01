@@ -7,7 +7,7 @@ export const constantsProps = {
         {
             "productId": 1001,
             "code": "n-1001",
-            "name": "Nấm linh chi",
+            "name": "Thành đang thử",
             "Group": 1101,
             "brand": "Đại Nguyên",
             "PathImg": [
@@ -81,7 +81,7 @@ export const constantsProps = {
         {
             "productId": 1003,
             "code": "n-1003",
-            "name": "Nấm linh chi 1",
+            "name": "Nấm linh chi 22233",
             "Group": 1101,
             "brand": "Đại Nguyên",
             "PathImg": [
